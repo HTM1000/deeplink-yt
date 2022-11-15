@@ -3,6 +3,7 @@
     "name": "deep-link",
     "slug": "deep-link",
     "version": "1.0.0",
+    "schema": "deeplink",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -18,13 +19,15 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.deeplink"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.deeplink"
     },
     "web": {
       "favicon": "./assets/favicon.png"
